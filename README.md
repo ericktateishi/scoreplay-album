@@ -10,10 +10,10 @@ This project is a SPA Web Application developed in ReactJs to build a small sear
 
 ## Running locally
 
-1. You need to create a `.env` file based on the `.env.example` file on the root folder of the project.
+1. You need to create a `.env.local` file based on the `.env.example` file on the root folder of the project.
 2. Run `yarn` to install all dependencies.
-3. Run `yarn develop` to start the server.
-4. Open [http://localhost:1337/admin](http://localhost:1337/admin) with your browser to see the result.
+3. Run `yarn start` to start the server.
+4. Open [http://localhost:3000/](http://localhost:3000/) with your browser to see the result.
 
 ## Test
 
