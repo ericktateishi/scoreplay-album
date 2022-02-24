@@ -1,9 +1,6 @@
 # ScorePaly Album Search
 
-This project is a SPA Web Application developed in ReactJs to build a
-
-This project is an API based on [Strapi](https://strapi.io/documentation/developer-docs/latest/getting-started/introduction.html) that provides and saves the data for Beauty Ops.
-Beauty Ops is an app that allows salon owners to have an insight into their entire business through reports.
+This project is a SPA Web Application developed in ReactJs to build a small search album app.
 
 ## Technologies
 
