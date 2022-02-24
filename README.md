@@ -4,9 +4,9 @@ This project is a SPA Web Application developed in ReactJs to build a small sear
 
 ## Technologies
 
-- [NodeJS](https://nodejs.org/en/docs/)
-- [Strapi](https://strapi.io/documentation/developer-docs/latest/getting-started/introduction.html)
-- [Postgres](https://www.postgresql.org/)
+- [ReactJS](https://reactjs.org/docs/getting-started.html)
+- [Redux](https://react-redux.js.org/introduction/getting-started)
+- [MUI](https://mui.com/getting-started/installation/)
 
 ## Running locally
 
