@@ -42,4 +42,8 @@ The app is in the `src` folder, inside it we have the following folders:
 
 ## Coding standards
 
-The app is using ESLint and Prittier with the Airbnb standards.
+The app is using ESLint and Prittier with the Airbnb standards. To run just use the command below:
+
+```sh
+yarn lint
+```
