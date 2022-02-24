@@ -1,44 +1,48 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+# ScorePaly Album Search
 
-## Available Scripts
+This project is a SPA Web Application developed in ReactJs to build a
 
-In the project directory, you can run:
+This project is an API based on [Strapi](https://strapi.io/documentation/developer-docs/latest/getting-started/introduction.html) that provides and saves the data for Beauty Ops.
+Beauty Ops is an app that allows salon owners to have an insight into their entire business through reports.
 
-### `npm start`
+## Technologies
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [NodeJS](https://nodejs.org/en/docs/)
+- [Strapi](https://strapi.io/documentation/developer-docs/latest/getting-started/introduction.html)
+- [Postgres](https://www.postgresql.org/)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Running locally
 
-### `npm test`
+1. You need to create a `.env` file based on the `.env.example` file on the root folder of the project.
+2. Run `yarn` to install all dependencies.
+3. Run `yarn develop` to start the server.
+4. Open [http://localhost:1337/admin](http://localhost:1337/admin) with your browser to see the result.
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Test
 
-### `npm run build`
+```sh
+yarn test
+```
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Architecture
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+The app is in the `src` folder, inside it we have the following folders:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Project tree
 
-### `npm run eject`
+- `components`: in this folder we have all of react components;
+  - `core`: here are the reusable components, e.g.: `TextField`, `SelectField`, and `Loading`;
+  - `[other folders]`: here are the non reusable components, e.g.: `Header` (the app header), `Search` (the current index page);
+- `hooks`: here we have all of the hooks, currently, the only one we use is `useSearchAlbums`;
+- `services`: currently, we just have one service, the ScorePlay API;
+- `store`: all of the Redux stuff are in here (store, reducers, actions, and the initialStates);
+  - `configure.js`: here we combine all of the reducers;
+  - `[other folders]`: each of the reducers, its actions, and its initialStates are in one of these folders;
+- `test`: eventhough each react components has its test file on its folder, here we have the test setup and the reducres initialStates mocks;
+  - `setup.js`: this setup.js file is used to start the redux while testing the components.
+  - `mock`: here we have the main initialState for the reducers;
+- `utils`: a few utils to help parsing the API response;
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Coding standards
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+The app is using ESLint and Prittier with the Airbnb standards.
