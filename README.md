@@ -1,4 +1,4 @@
-# ScorePaly Album Search
+# ScorePlay Album Search
 
 This project is a SPA Web Application developed in ReactJs to build a small search album app.
 
