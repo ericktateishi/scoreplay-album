@@ -33,14 +33,14 @@ The app is in the `src` folder, inside it we have the following folders:
 - `hooks`: here we have all of the hooks, currently, the only one we use is `useSearchAlbums`;
 - `services`: currently, we just have one service, the ScorePlay API;
 - `store`: all of the Redux stuff is in here (store, reducers, actions, and the initialStates);
-  - `configure.js`: here we combine all of the reducers;
+  - `configure.js`: here we comsbine all of the reducers;
   - `[other folders]`: each of the reducers, its actions, and its initialStates are in one of these folders;
 - `test`: even though each react component has its test file on its folder, here we have the test setup and the reducers initialStates mocks;
   - `setup.js`: this setup.js file is used to start the redux while testing the components.
   - `mock`: here we have the main initialState for the reducers;
 - `utils`: a few utils to help parse the API response;
 
-## Coding standards
+## Coding standards!
 
 The app is using ESLint and Prittier with the Airbnb standards. To run just use the command below:
 
